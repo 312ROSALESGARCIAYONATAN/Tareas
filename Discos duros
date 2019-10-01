@@ -1,0 +1,53 @@
+Discos Duros
+Los discos duros tienen características que definen su desempeño como son la capacidad de almacenamiento, su velocidad de rotación, tiempo de acceso, tasa de transferencia de datos y su memoria caché contenida en su controladora.
+En cuanto al funcionamiento del disco duro se describe como se efectúa las operaciones de lectura/escritura y como los componentes que forman parte del disco duro actúan para realizar dichas operaciones.
+El disco duro posee interfaces los cuales establecen una conexión entre el mecanismo del disco duro y el bus del sistema, entre ellos podemos mencionar a los más importantes como el IDE y el SCSI.
+La instalación de un disco duro se divide en varios pasos los cuales uno de ellos es definir la configuración del disco duro, es decir, si va a ser esclavo o maestro. Si es maestro entonces en él se va a ser la instalación del sistema operativo.
+DISCO DURO
+DEFINICIÓN:
+El termino duro se usa para distinguirlo de los discos blancos o también llamados floppies. Se denomina disco duro al dispositivo encargado de almacenar y recuperar grandes gran cantidad de información en el computador. Los discos duros son el principal elemento de la memoria secundaria de un ordenador. Es un disco magnético, que contiene varios discos o platos donde cada plato requiere de dos cabezas de lectura/escritura una para cada lado. Todas las cabezas de lectura/escritura se conectan a un solo brazo de acceso para que no puedan moverse independientemente.
+Los discos duros están protegidos por una caja sellada y no suelen extraerse de los receptáculos de la unidad.
+ 
+ESTRUCTURA FÍSICA DE UN DISCO DURO:
+El disco duro esta compuesto por las siguientes estructuras:
+Platos:
+También llamados discos. Estos discos están elaborados de aluminio o vidrio recubiertos en su superficie por un material ferromagnético apilados alrededor de un eje que gira gracias a un motor, a una velocidad muy rápida. El diámetro de los platos oscila entre los 5cm y 13 cm.
+Cabezal de lectura/escritura:
+Es la parte del disco duro que lee y escribe los datos del disco. La mayoría de los discos duros incluyen una cabeza de lectura/escritura a cada lado del plato o disco, pero hay algunos discos de alto desempeño tienen dos o mas cabezas sobre cada que tienen dos o más cabezas sobre cada superficie esto de manera que cada cabeza atienda la mitad del disco reduciendo la distancia del desplazamiento radial.
+ 
+Impulsor de Cabezal:
+Es un motor que mueve los cabezales sobre el disco hasta llegar a la pista adecuada, donde esperan que los sectores correspondientes giren bajo ellos para ejecutar de manera efectiva la lectura/escritura.
+Pistas:
+La superficie de un disco esta dividida en unos elementos llamadas pistas concéntricas, donde se almacena la información. Las pistas están numeradas desde la parte exterior comenzando por el 0. Las cabezas se mueven entre la pista 0 a la pista más interna.
+ 
+Cilindro:
+Es el conjunto de pistas concéntricas de cada cara de cada plato, los cuales están situadas unas encima de las otras. Lo que se logra con esto es que la cabeza no tiene que moverse para poder acceder a las diferentes pistas de un mismo cilindro. Dado que las cabezas de lectura/escritura están alineadas unas con otras, la controladora de disco duro puede escribir en todas las pistas del cilindro sin mover el rotor. Cada pista esta formada por uno o más cluster.
+ 
+Sector:
+Las pistas están divididas en sectores, el número de sectores es variable. Un sector es la unidad básica de almacenamiento de datos sobre los discos duros. Los discos duros almacenan los datos en pedazos gruesos llamados sectores, la mayoría de los discos duros usan sectores de 512 bytes cada uno. Comúnmente es la controladora del disco duro quien determina el tamaño de un sector en el momento en que el disco es formateado, en cambio en algunos modelos de disco duro se permite especificar el tamaño de un sector.
+ 
+ESTRUCTURA LÓGICA DE UN DISCO DURO:
+La estructura lógica de un disco duro esta formado por:
+    Sector de arranque.
+    Espacio particionado.
+    Espacio sin particionar.
+Sector de arranque: Es el primer sector de un disco duro en él se almacena la tabla de particiones y un programa pequeño llamado Master Boot. Este programa se encarga de leer la tabla de particiones y ceder el control al sector de arranque de la partición activa, en caso de que no existiese partición activa mostraría un mensaje de error.
+Espacio particionado: Es el espacio del disco que ha sido asignado a alguna partición.
+Espacio sin particionar: Es el espacio del disco que no ha sido asignado a ninguna partición.
+ 
+Calcular la Longitud de Almacenamiento en su capacidad:
+El disco duro puede tener los datos siguientes en su etiqueta:
+255 cabezas, 12161 cilindros 63 sectores/pista
+La capacidad de un disco duro se calcula con la siguiente formula:
+Cabezas * Cilindros * Sectores * 512 Bytes por cada sector
+Entonces tenemos que el disco tiene:
+255 * 12161 = 3’101,055 cilindros
+Y 
+3’101,055 de cilindros * 63 sectores c/u = 195,366,465 Sectores
+Ahoira bien
+195,366,465 * 512 Bytes por sec (que es lo mas normal pero puede cambiar) = 100,027,630,080 Bytes
+Tomando en cuenta que:
+Si un Kb es igual a 1024 bytes entonces tiene 97’683,232.5 Kb
+Si un Mb es igualk a 1024 Kb entonces tiene 95,393.78173828125 Mb
+Si Un Gb es igual a 1024 Mb entonces tiene 93.157989978790283203125 Gb
+
